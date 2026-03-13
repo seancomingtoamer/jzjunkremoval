@@ -237,103 +237,87 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {/* Junk Removal */}
-            <div className="group bg-[#0f1a0f] border border-[#2d6a2e]/40 rounded-2xl p-8 hover:border-[#4CAF50] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(76,175,80,0.2)]">
-              <div className="w-16 h-16 bg-[#2d6a2e]/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#4CAF50]/20 transition-colors">
-                <svg
-                  className="w-8 h-8 text-[#4CAF50]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
-                  />
-                </svg>
+            <div className="group bg-[#0f1a0f] border border-[#2d6a2e]/40 rounded-2xl overflow-hidden hover:border-[#4CAF50] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(76,175,80,0.2)]">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/junk-removal.jpg"
+                  alt="Junk removal service - loading truck"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a0f] to-transparent" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">
-                Junk Removal
-              </h3>
-              <p className="text-[#a5d6a7]/80">
-                Furniture, appliances, construction debris, yard waste — we haul
-                it all. Fast pickup, responsible disposal.
-              </p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Junk Removal
+                </h3>
+                <p className="text-[#a5d6a7]/80">
+                  Furniture, appliances, construction debris, yard waste — we haul
+                  it all. Fast pickup, responsible disposal.
+                </p>
+              </div>
             </div>
 
             {/* Lawn Care */}
-            <div className="group bg-[#0f1a0f] border border-[#2d6a2e]/40 rounded-2xl p-8 hover:border-[#4CAF50] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(76,175,80,0.2)]">
-              <div className="w-16 h-16 bg-[#2d6a2e]/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#4CAF50]/20 transition-colors">
-                <svg
-                  className="w-8 h-8 text-[#4CAF50]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
-                  />
-                </svg>
+            <div className="group bg-[#0f1a0f] border border-[#2d6a2e]/40 rounded-2xl overflow-hidden hover:border-[#4CAF50] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(76,175,80,0.2)]">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/lawn-care.jpg"
+                  alt="Lawn care service - mowing"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a0f] to-transparent" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Lawn Care</h3>
-              <p className="text-[#a5d6a7]/80">
-                Mowing, edging, trimming, leaf removal, and full yard cleanups.
-                Keep your property looking fresh year-round.
-              </p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">Lawn Care</h3>
+                <p className="text-[#a5d6a7]/80">
+                  Mowing, edging, trimming, leaf removal, and full yard cleanups.
+                  Keep your property looking fresh year-round.
+                </p>
+              </div>
             </div>
 
             {/* Moving */}
-            <div className="group bg-[#0f1a0f] border border-[#2d6a2e]/40 rounded-2xl p-8 hover:border-[#4CAF50] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(76,175,80,0.2)]">
-              <div className="w-16 h-16 bg-[#2d6a2e]/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#4CAF50]/20 transition-colors">
-                <svg
-                  className="w-8 h-8 text-[#4CAF50]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z"
-                  />
-                </svg>
+            <div className="group bg-[#0f1a0f] border border-[#2d6a2e]/40 rounded-2xl overflow-hidden hover:border-[#4CAF50] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(76,175,80,0.2)]">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/moving.jpg"
+                  alt="Moving service - packing boxes"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a0f] to-transparent" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">
-                Moving Help
-              </h3>
-              <p className="text-[#a5d6a7]/80">
-                Local moves, apartment cleanouts, heavy lifting — we handle the
-                hard part so you don&apos;t have to.
-              </p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">
+                  Moving Help
+                </h3>
+                <p className="text-[#a5d6a7]/80">
+                  Local moves, apartment cleanouts, heavy lifting — we handle the
+                  hard part so you don&apos;t have to.
+                </p>
+              </div>
             </div>
 
             {/* Cleaning */}
-            <div className="group bg-[#0f1a0f] border border-[#2d6a2e]/40 rounded-2xl p-8 hover:border-[#4CAF50] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(76,175,80,0.2)]">
-              <div className="w-16 h-16 bg-[#2d6a2e]/30 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#4CAF50]/20 transition-colors">
-                <svg
-                  className="w-8 h-8 text-[#4CAF50]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                  />
-                </svg>
+            <div className="group bg-[#0f1a0f] border border-[#2d6a2e]/40 rounded-2xl overflow-hidden hover:border-[#4CAF50] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(76,175,80,0.2)]">
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src="/images/cleaning.jpg"
+                  alt="Cleaning service - professional cleaning"
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a0f] to-transparent" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Cleaning</h3>
-              <p className="text-[#a5d6a7]/80">
-                Deep cleaning, post-construction cleanup, move-in/move-out
-                cleaning. Leave it spotless, guaranteed.
-              </p>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-white mb-3">Cleaning</h3>
+                <p className="text-[#a5d6a7]/80">
+                  Deep cleaning, post-construction cleanup, move-in/move-out
+                  cleaning. Leave it spotless, guaranteed.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -391,6 +375,18 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
+              <div className="relative h-64 rounded-3xl overflow-hidden mb-6">
+                <Image
+                  src="/images/hauling.jpg"
+                  alt="JZ team managing logistics"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1a0f] via-[#0f1a0f]/40 to-transparent" />
+                <div className="absolute bottom-4 left-6 right-6">
+                  <p className="text-white font-bold text-lg">Professional. Reliable. Ready to Work.</p>
+                </div>
+              </div>
               <div className="bg-gradient-to-br from-[#2d6a2e]/30 to-[#1a3a1a] rounded-3xl p-10 border border-[#2d6a2e]/40">
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
