@@ -122,7 +122,7 @@ export default function Home() {
               alt="JZ's Junk Removal Services"
               width={350}
               height={250}
-              className="mx-auto mb-8 rounded-2xl drop-shadow-[0_0_30px_rgba(76,175,80,0.4)]"
+              className="mx-auto mb-8 drop-shadow-[0_0_30px_rgba(76,175,80,0.4)]"
               priority
             />
           </div>
