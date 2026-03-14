@@ -101,9 +101,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0f1a0f] via-[#1a3a1a] to-[#0f1a0f]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(76,175,80,0.15)_0%,_transparent_70%)]" />
+        {/* Background gradient - matched to logo green #26401a */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1a2e14] via-[#26401a] to-[#1a2e14]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(38,64,26,0.6)_0%,_transparent_70%)]" />
 
         {/* Grid pattern overlay */}
         <div
