@@ -118,11 +118,11 @@ export default function Home() {
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="animate-fade-in-up">
             <Image
-              src="/logo.png"
+              src="/logo-hero.png"
               alt="JZ's Junk Removal Services"
-              width={200}
-              height={200}
-              className="mx-auto mb-8 drop-shadow-[0_0_30px_rgba(76,175,80,0.4)]"
+              width={350}
+              height={250}
+              className="mx-auto mb-8 rounded-2xl drop-shadow-[0_0_30px_rgba(76,175,80,0.4)]"
               priority
             />
           </div>
