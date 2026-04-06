@@ -28,7 +28,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+      <body className={`${inter.variable} antialiased`}>
+        {/* DEMO WATERMARK - Remove this block when client pays */}
+        <div style={{position:'fixed',top:0,left:0,width:'100%',zIndex:9999,backgroundColor:'#ff0000',color:'#fff',textAlign:'center',padding:'10px 0',fontSize:'18px',fontWeight:'bold',letterSpacing:'2px'}}>
+          DEMO SITE — NOT FOR COMMERCIAL USE
+        </div>
+        <div style={{position:'fixed',top:'50%',left:'50%',transform:'translate(-50%,-50%) rotate(-35deg)',zIndex:9998,fontSize:'120px',fontWeight:'900',color:'rgba(255,0,0,0.12)',pointerEvents:'none',userSelect:'none',letterSpacing:'20px',whiteSpace:'nowrap'}}>
+          DEMO
+        </div>
+        {/* END DEMO WATERMARK */}
+        {children}
+      </body>
     </html>
   );
 }
